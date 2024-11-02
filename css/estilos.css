@@ -1,0 +1,17 @@
+a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    margin: 50px;
+    font-size: 30px;
+    color: tomato;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+h1 {
+    color: cyan;
+}

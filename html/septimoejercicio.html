@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Tecla</title>
+</head>
+
+<body>
+
+    <h1>Teclado</h1>
+    <span id="caracter">Caracter:[]</span><br>
+    <span id="id">Código:[]</span>
+
+    <script>
+        document.addEventListener("keydown", function (event) {
+            const tecla = event.key 
+            const codigo = event.keyCode || event.which 
+
+            document.getElementById("caracter").innerText = `Caracter: [${tecla}]`
+            document.getElementById("id").innerText = `Código: [${codigo}]`
+        })
+    </script>
+
+</body>
+
+</html>

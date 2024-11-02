@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" onmousemove="detectar(event)">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar posicion del cursor</title>
+</head>
+
+<body>
+
+    <h1>Cursor</h1>
+    <span id="navegador">Navegador [0 , 0]</span><br>
+    <span id="pagina">Pagina [0 , 0]</span>
+
+    <script>
+
+        function detectar(event) {
+            const xNavegador = event.clientX
+            const yNavegador = event.clientY
+            const xPagina = event.pageX
+            const yPagina = event.pageY
+            const posicionNavegador = `Navegador [${xNavegador}, ${yNavegador}]`
+            document.getElementById("navegador").innerText = posicionNavegador
+            const posicionPagina = `Pagina [${xPagina}, ${yPagina}]`
+            document.getElementById("pagina").innerText = posicionPagina
+        }
+        
+    </script>
+
+</body>
+
+</html>

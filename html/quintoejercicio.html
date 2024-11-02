@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar Texto</title>
+</head>
+
+<body>
+
+    <p id="texto1">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas
+        nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum
+        et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit
+        amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi.
+        Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
+    </p>
+    <button onclick="esconder(this)" id="ocultar1">Ocultar Texto</button>
+    <p id="texto2">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas
+        nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum
+        et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit
+        amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi.
+        Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
+    </p>
+    <button onclick="esconder(this)" id="ocultar2">Ocultar Texto</button>
+    <p id="texto3">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas
+        nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum
+        et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit
+        amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi.
+        Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
+    </p>
+    <button onclick="esconder(this)" id="ocultar3">Ocultar Texto</button>
+
+    <script>
+        function esconder(boton) {
+            var idBoton = boton.id
+            switch (idBoton) {
+                case "ocultar1": {
+                    document.getElementById("texto1").textContent = ""
+                } break;
+                case "ocultar2": {
+                    document.getElementById("texto2").textContent = ""
+                } break;
+                case "ocultar3": {
+                    document.getElementById("texto3").textContent = ""
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
